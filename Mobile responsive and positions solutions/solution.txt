@@ -1,0 +1,45 @@
+Ans1.
+n CSS, media queries allow you to apply different styles to elements based on the characteristics of the device or viewport where the content is being displayed. They are used to create responsive designs that adapt to different screen sizes, orientations, resolutions, and other device features. Here’s how media queries work and their common uses:
+Syntax of Media Queries:
+@media media_type and (media_feature) {
+  /* CSS rules specific to this media query */
+}
+
+/* Example of a media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+Usage of Media Queries:
+1. Responsive Web Design: Adjust styles for different screen sizes and orientations to ensure content displays optimally on various devices (mobile phones, tablets, desktops).
+2. Print Styles: Customize styles for print layouts to optimize readability and ensure content prints properly.
+
+Ans2.
+1. min-width
+Description: Specifies the minimum width at which the styles inside the media query should apply.
+Usage: Use min-width when you want to apply styles to viewports or devices that are wider than a specified width.
+@media (min-width: 768px) {
+  /* Styles for viewports wider than 768px */
+  .sidebar {
+    display: block;
+  }
+}
+
+2. max-width
+Description: Specifies the maximum width at which the styles inside the media query should apply.
+Usage: Use max-width when you want to apply styles to viewports or devices that are narrower than a specified width.
+@media (max-width: 768px) {
+  /* Styles for viewports narrower than or equal to 768px */
+  .sidebar {
+    display: none;
+  }
+}
+
+Ans3.
+1. float Property:
+The float property is used to align elements horizontally within their parent container, allowing them to float either to the left or right. When an element is floated, it is taken out of the normal flow of the document, which can affect the positioning of subsequent elements.
+2. clear Property:
+The clear property specifies whether an element should be moved below (cleared) floating elements that precede it. It prevents elements from wrapping around floated elements.
+
